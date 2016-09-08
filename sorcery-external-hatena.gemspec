@@ -1,0 +1,22 @@
+$:.push File.expand_path("../lib", __FILE__)
+
+# Maintain your gem's version:
+require "sorcery/external/hatena/version"
+
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "sorcery-external-hatena"
+  s.version     = Sorcery::External::Hatena::VERSION
+  s.authors     = ["Otakumesi"]
+  s.email       = ["bakednt@gmail.com"]
+  s.homepage    = "http://127.0.0.1/"
+  s.summary     = "Hatena OAuth for External of Sorcery"
+  s.description = "Add Hatena OAuth Login to External in Sorcery of Rails Plugin."
+  s.license     = "MIT"
+
+  s.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+
+  s.add_dependency "rails", "~> 5.0.0"
+
+  s.add_development_dependency "sorcery"
+end
