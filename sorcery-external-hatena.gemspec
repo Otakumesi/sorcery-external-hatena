@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Sorcery::External::Hatena::VERSION
   s.authors     = ["Otakumesi"]
   s.email       = ["bakednt@gmail.com"]
-  s.homepage    = "http://127.0.0.1/"
+  s.homepage    = "https://github.com/Otakumesi/sorcery-external-hatena"
   s.summary     = "Hatena OAuth for External of Sorcery"
   s.description = "Add Hatena OAuth Login to External in Sorcery of Rails Plugin."
   s.license     = "MIT"
