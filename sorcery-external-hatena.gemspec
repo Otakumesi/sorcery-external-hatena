@@ -7,7 +7,7 @@ require "sorcery/external/hatena/version"
 Gem::Specification.new do |s|
   s.name        = "sorcery-external-hatena"
   s.version     = Sorcery::External::Hatena::VERSION
-  s.authors     = ["Otakumesi"]
+  s.authors     = ["otakumesi"]
   s.email       = ["bakednt@gmail.com"]
   s.homepage    = "https://github.com/Otakumesi/sorcery-external-hatena"
   s.summary     = "Hatena OAuth for External of Sorcery"
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.0.0"
+  #s.add_dependency "rails", "~> 5.0.0"
 
-  s.add_development_dependency "sorcery"
+  s.add_dependency "sorcery", "~>0.9"
 end
