@@ -6,7 +6,7 @@ require "sorcery/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "sorcery-external-hatena"
-  s.version     = Sorcery::VERSION
+  s.version     = Sorcery::Providers::Hatena::VERSION
   s.authors     = ["otakumesi"]
   s.email       = ["bakednt@gmail.com"]
   s.homepage    = "https://github.com/Otakumesi/sorcery-external-hatena"
