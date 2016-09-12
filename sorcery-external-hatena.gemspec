@@ -1,7 +1,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "sorcery/version"
+require "sorcery/version.rb"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
