@@ -2,7 +2,7 @@ module Sorcery
   module Controller
     module Submodules
       module ExternalAddHatena
-        def self.included(base)
+        def self.prepended(base)
           require "sorcery/providers/hatena"
           super(base)
         end
@@ -10,5 +10,3 @@ module Sorcery
     end
   end
 end
-
-ActionController::Base.send(:prepend, Sorcery::Controller::Submodules::ExternalAddHatena)
