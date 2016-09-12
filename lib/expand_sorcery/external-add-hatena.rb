@@ -1,3 +1,5 @@
+require "sorcery"
+
 module Sorcery
   module Controller
     module Submodules
