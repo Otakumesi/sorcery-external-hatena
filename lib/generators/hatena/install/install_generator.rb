@@ -8,7 +8,7 @@ module Hatena
         source_path = File.expand_path(File.expand_path('../../../../expand_sorcery', __FILE__))
         FileUtils.mkdir_p "#{Rails.root}/config/initializers/expand_sorcery/sorcery/providers"
         FileUtils.cp_r "#{source_path}/external-add-hatena.rb", "#{Rails.root}/config/initializers/expand_sorcery/external-add-hatena.rb"
-        FileUtils.cp_r "#{source_root}/sorcery/providers/hatena.rb", "#{Rails.root}/config/initializers/expand_sorcery/sorcery/providers/hatena.rb"
+        FileUtils.cp_r "#{source_path}/sorcery/providers/hatena.rb", "#{Rails.root}/config/initializers/expand_sorcery/sorcery/providers/hatena.rb"
       end
     end
   end
