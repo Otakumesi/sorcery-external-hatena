@@ -9,10 +9,7 @@ After this gem install in Rails Application:
 
 ```bash
 $ rails g hatena:install
-````
-
-```config/initializers/expand_sorcery/```
-
+```
 next...
 
 This in an example that you might put into Rails initializers at ```config/initializers/sorcery.rb```.
