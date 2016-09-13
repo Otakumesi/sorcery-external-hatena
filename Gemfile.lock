@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sorcery-external-hatena (0.1.0.8)
+    sorcery-external-hatena (0.1.0.9)
       rails (~> 5.0.0)
       sorcery (~> 0.9)
 
