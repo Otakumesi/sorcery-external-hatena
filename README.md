@@ -52,17 +52,11 @@ end
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sorcery-external-hatena'
+gem 'sorcery-external-hatena', github: 'Otakumesi/sorcery-external-hatena'
 ```
-
 And then execute:
 ```bash
 $ bundle install
-```
-
-Or install it yourself as:
-```bash
-$ gem install sorcery-external-hatena
 ```
 
 ## Contributing
