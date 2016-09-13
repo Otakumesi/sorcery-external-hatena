@@ -1,8 +1,50 @@
 # Sorcery::External::Hatena
-Short description and motivation.
+The OAuth provider of Japanese famous social community """Hatena""" add to external of sorcery as the Rails's auth gem
 
 ## Usage
-How to use my plugin.
+
+
+After this gem install in Rails Application:
+
+```bash
+$ rails g hatena:install
+````
+
+next...
+
+This in an example that you might put into Rails initializers at ```config/config/initializers.rb```.
+
+```ruby
+...  ...
+
+Rails.application.config.sorcery.configure do |config|
+
+config.external_providers = [:twitter, :github, :hatena] # Add :hatena
+
+... other provider code ...
+
+# add following code
+
+#
+# Hatena OAuth Provider
+# your environment
+#
+config.hatena.key = ENV['HATENA_KEY']
+config.hatena.secret = ENV['HATENA_SECRET']
+config.hatena.callback_url = "http://127.0.0.1:3000/oauth/callback?provider=hatena"
+config.hatena.user_info_mapping = {user_name: "display_name", image_url: "profile_image_url"}'
+config.hatena.scope = "read_public"
+
+... other provider code ...
+
+end
+```
+
+## MoreInfometion
+[Hatena's API doc](https://github.com/Otakumesi/sorcery-external-hatena.git)
+[Sorcery's GithubPage](https://github.com/NoamB/sorcery)
+[Sorcery::External's doc](https://github.com/NoamB/sorcery/wiki/External)
+
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -13,7 +55,7 @@ gem 'sorcery-external-hatena'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
